@@ -22,3 +22,7 @@ different environment.
 4. Add required environment variables to respective files.
 5. Use process.env.BUILD_ENV to control which env file is used.
 6. BUILD_ENV is an environment variable set on the machine where it is built.
+
+##Serve static files over http
+1. `npm install http-server` - Installs the http server.
+2. Run by stating the http-server to server from the dist directory.
