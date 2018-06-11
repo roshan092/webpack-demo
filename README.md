@@ -10,3 +10,6 @@ Demo project for learning webpack
 3. Create dist/index.html and add reference to built js file
 4. Create a webpack.config.json file, define entry and output
 
+##Build from js file
+1. `npm install --save-dev ora`  - used to display the spinner.
+2. `npm install --save-dev rimraf` - used to delete the old files.
