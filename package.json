@@ -2,9 +2,10 @@
   "name": "webpack-demo",
   "version": "1.0.0",
   "description": "Demo project for learning webpack",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/roshan092/webpack-demo/issues"
   },
-  "homepage": "https://github.com/roshan092/webpack-demo#readme"
+  "homepage": "https://github.com/roshan092/webpack-demo#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "npm": "^5.6.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  }
 }
