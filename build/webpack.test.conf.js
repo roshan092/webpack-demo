@@ -3,6 +3,7 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 
 const webpackConfig = merge(baseWebpackConfig, {
+    mode: 'production',
     plugins: [
         new webpack.DefinePlugin({
             'process.env': require('../config/test.env')

@@ -9,7 +9,7 @@ const rm = require('rimraf');
 const webpackConfig = require('./webpack.prod.conf');
 const webpack = require('webpack');
 
-const spinner = ora('building for production...');
+const spinner = ora(`building for ${process.env.BUILD_ENV}...`);
 spinner.start();
 
 rm(path.join(path.resolve(__dirname, '../dist'), 'static'), err => {

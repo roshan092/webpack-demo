@@ -1,4 +1,5 @@
 import {join} from 'lodash';
+import Constants from './constants';
 
 function component() {
     const element = document.createElement('div');
@@ -9,8 +10,8 @@ function component() {
 function serviceUrl() {
     const element = document.createElement('div');
     element.innerHTML = join([
-        process.env.NODE_ENV,
-        process.env.API_BASE_URL
+        Constants.CONTEXT_PATH,
+        Constants.API_BASE_URL
     ], ' ');
     return element;
 }
