@@ -13,3 +13,12 @@ Demo project for learning webpack
 ##Build from js file
 1. `npm install --save-dev ora`  - used to display the spinner.
 2. `npm install --save-dev rimraf` - used to delete the old files.
+
+##Create different build for different environments.
+1. `npm install --save-dev webpack-merge` - used to merge webpack conf for 
+different environment.
+2. Create three webpack conf files, testing, production, development.
+3. Create a config folder and add files per environment.
+4. Add required environment variables to respective files.
+5. Use process.env.BUILD_ENV to control which env file is used.
+6. BUILD_ENV is an environment variable set on the machine where it is built.
